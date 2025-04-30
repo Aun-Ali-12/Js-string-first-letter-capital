@@ -8,3 +8,4 @@ for (let i = 0; i < splitString.length; i++) {
   finalLine.push(concatName);
 }
 console.log(finalLine.join(" "));
+document.write(finalLine.join(" "));
