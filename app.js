@@ -7,5 +7,7 @@ for (let i = 0; i < splitString.length; i++) {
   let concatName = firstLetter + secLetter;
   finalLine.push(concatName);
 }
-console.log(finalLine.join(" "));
-document.write(finalLine.join(" "));
+console.log(`Given Line: ${str}`);
+document.write(`Given Line: ${str} <br>`);
+console.log(`Capitalized Line: ${finalLine.join(" ")}`);
+document.write(`Capitalized Line: ${finalLine.join(" ")}`);
