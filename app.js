@@ -2,7 +2,7 @@
 
 let str = prompt("Enter any text?");
 let strtoLowerCase = str.toLocaleLowerCase();
-let strSplit = strtoLowerCase.split(" "); //[ 'hello', 'world!' ]
+let strSplit = strtoLowerCase.split(" ");
 let finalResult = [];
 
 for (let i = 0; i < strSplit.length; i++) {
