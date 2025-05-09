@@ -1,13 +1,23 @@
-let str = prompt("hello! my name is aun").toLocaleLowerCase();
-let splitString = str.split(" ");
-let finalLine = [];
-for (let i = 0; i < splitString.length; i++) {
-  let firstLetter = splitString[i].slice(0, 1).toLocaleUpperCase();
-  let secLetter = splitString[i].slice(1);
-  let concatName = firstLetter + secLetter;
-  finalLine.push(concatName);
+//Captializing first alphabet of each word after space
+
+let str = prompt("Enter any text?");
+let strtoLowerCase = str.toLocaleLowerCase();
+let strSplit = strtoLowerCase.split(" "); //[ 'hello', 'world!' ]
+let finalResult = [];
+
+for (let i = 0; i < strSplit.length; i++) {
+  // console.log(strSplit[i]);
+
+  let upperLetter = strSplit[i].slice(0, 1).toLocaleUpperCase();
+  // console.log(upperLetter);
+
+  let secPart = strSplit[i].slice(1);
+  // console.log(secPart);
+
+  let fullStr = upperLetter + secPart;
+  // console.log(fullStr);
+
+  finalResult.push(fullStr);
 }
-console.log(`Given Line: ${str}`);
-document.write(`Given Line: ${str} <br>`);
-console.log(`Capitalized Line: ${finalLine.join(" ")}`);
-document.write(`Capitalized Line: ${finalLine.join(" ")}`);
+console.log(finalResult.join(" "));
+document.write(finalResult.join(" "));
